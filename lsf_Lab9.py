@@ -13,5 +13,3 @@ def encode(password):
             num += 3
         encoded += str(num)
     return encoded
-
-print(encode(input("Enter a password to encode: ")))
