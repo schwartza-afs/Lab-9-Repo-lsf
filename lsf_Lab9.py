@@ -13,3 +13,11 @@ def encode(password):
             num += 3
         encoded += str(num)
     return encoded
+
+def decode(password: str):
+    decode = ""
+    for i in password:
+        if '0' <= i <= '9':
+            decoded_i = str((int(i) - 3) % 10)
+            decode += decoded_i
+    return decode
